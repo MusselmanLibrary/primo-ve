@@ -1,0 +1,154 @@
+/* #fff = top bar
+   #053371 = top bar text, hover
+   #053371 = guest/name
+   #053371 = search bar
+   #E9D5A3 = sign in
+*/
+
+/*Uncomment the follwoing lines to move facets to the left*/
+
+prm-search > md-content.md-primoExplore-theme .main {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+.screen-gt-sm .sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+/*--------Top Banner ---------------*/
+
+/*Top Banner Background Color */
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {
+	background-color: #fff; 
+}
+
+prm-topbar {
+  height: 80px;
+}
+
+prm-logo .product-logo {
+  height: 100%;
+}
+
+/*prm-main-menu[menu-type=menu] .md-button {
+  font-size: 1em;
+}*/
+
+.md-button {
+ font-size: 1em !important;
+}
+
+/*-----User Area -------*/
+
+/*background for Guest Button And Icon */
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background {
+    background-color: #fff;
+}
+
+  /*Hover */
+  /*NAV BAR REGULAR button hover */
+  prm-topbar .md-button:focus, prm-topbar .md-button:hover {
+      color: #fff !important;
+      background-color: #053371!important;
+      box-shadow: none;
+  }
+
+  prm-user-area .user-menu-button .user-name {
+      text-transform: none;
+      font-weight: 600;
+      color: #053371;
+      text-align: left;
+      max-width: 150px;
+  }
+
+/*  TOPBAR - USER AREA - HOVER COLOR */
+  md-fab-toolbar md-toolbar {
+      background-color: #fff !important;
+      pointer-events: none;
+      z-index: 23;
+  }
+  
+/*Top Bar- User Area - Button Link Color - On Hover */
+/*Language Button hover */
+
+prm-topbar .md-button {
+  color: #053371!important;
+  text-transform: none;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
+    color: #053371;
+    height: 100%;
+}
+
+/*User Area - Hover - Button  Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]) {
+    color: #053371;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {
+      color: #053371;
+  }
+
+  /*User Area - Hover - Button on Hover Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {
+    background-color: #fff;
+    color: #053371;
+    box-shadow: none!important;
+}
+
+/*Language Label - On Hover!! */
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy:hover {
+    color: #fff; /*Language - English- Text Color */
+    background-color: #053371; /*background-color for English Label*/
+    height: 100%;
+}
+
+/* search bar */
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar {
+    background-color: #053371;
+}
+
+/* sign in */
+.bar.alert-bar {
+	background-color: #E9D5A3;
+}
+
+/* Remove Full Display Navigation Links */
+
+.services-index-under {
+  display: none;
+}
+
+.md-button.button-confirm:hover:not([disabled]) {
+  background: #E87722;
+}
+
+.md-button.button-confirm {
+  color: #E87722;
+}
+
+.weak-text div[translate="Holdings:"], .summary-brief  {
+  color: black;
+}
+
+#worldcatLink {
+    display: block;
+    height: auto;
+    color: #ffffff;
+    padding-top: 1em;
+  }
+
+@-moz-document url-prefix() {
+    #worldcatLink {padding-top:0; margin:-5px;}
+
+button[aria-label="Edit details"] {
+  display:none;
+}
