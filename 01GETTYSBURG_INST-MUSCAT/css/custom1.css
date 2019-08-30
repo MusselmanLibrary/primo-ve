@@ -38,7 +38,9 @@ prm-logo .product-logo {
   font-size: 1em;
 }*/
 
-.md-button {
+/* change size of text in top-nav RCM 20190711 */
+
+prm-topbar .md-button {
  font-size: 1em !important;
 }
 
@@ -139,6 +141,8 @@ prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:ho
   color: black;
 }
 
+/* Format World Cat link */
+
 #worldcatLink {
     display: block;
     height: auto;
@@ -148,7 +152,38 @@ prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:ho
 
 @-moz-document url-prefix() {
     #worldcatLink {padding-top:0; margin:-5px;}
+  }
+
+#worldcatLogo {
+  vertical-align: text-bottom;  
+}
+
+/* Remove Syndetics Unbound header */
+
+#unbound_section_title {
+    display: none !important;
+}
+
+/* Hide Edit Details button on Personal details tab */
 
 button[aria-label="Edit details"] {
   display:none;
+}
+
+/* Hide Search within journal */
+
+div#searchWithinJournal {
+  display: none;
+}
+
+/* Hide library location in call number */
+
+span.best-location-library-code.locations-link {
+    display: none;
+}
+
+/* Hide LibChat if screen is less than 700 px wide */
+
+@media (max-width: 700px) {
+    .lcs_slide_out { display: none; }
 }
