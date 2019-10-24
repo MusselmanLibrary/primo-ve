@@ -48,7 +48,7 @@
   });
 // ... End BrowZine - Primo Integration
 
-// Report a Problem
+// Report a Problem Link injected into Full Results, adapted from Williams College Library
 
 app.controller('prmActionContainerAfterController', [function () {
     var vm = this;
@@ -57,8 +57,8 @@ app.controller('prmActionContainerAfterController', [function () {
 
     function getPermalink() {
         var permalink = encodeURIComponent(window.location.href);
-
-        var formField = 'https://docs.google.com/forms/...';
+        // insert link to Google Form and edit the entry param to the Google Form input element field used for the permalink. See https://ols57.commons.gc.cuny.edu/2015/03/19/how-to-user-triggered-error-reporting-in-ezproxy/ for more information about this
+        var formField = 'https://docs.google.com/forms/.../viewform?usp=pp_url&entry.XXXXXXXXXXX=';
         formField += permalink;
         return formField;
         //return vm.parentCtrl.hasSearchResults;
