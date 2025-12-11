@@ -1,7 +1,7 @@
 /* #fff = top bar
-   #053371 = top bar text, hover
-   #053371 = guest/name
-   #053371 = search bar
+   #043371 = top bar text, hover
+   #043371 = guest/name
+   #043371 = search bar
    #E9D5A3 = sign in
 */
 
@@ -55,14 +55,14 @@ prm-topbar .md-button {
   /*NAV BAR REGULAR button hover */
   prm-topbar .md-button:focus, prm-topbar .md-button:hover {
       color: #fff !important;
-      background-color: #053371!important;
+      background-color: #043371 !important;
       box-shadow: none;
   }
 
   prm-user-area .user-menu-button .user-name {
       text-transform: none;
       font-weight: 600;
-      color: #053371;
+      color: #043371;
       text-align: left;
       max-width: 150px;
   }
@@ -78,7 +78,7 @@ prm-topbar .md-button {
 /*Language Button hover */
 
 prm-topbar .md-button {
-  color: #053371!important;
+  color: #043371! important;
   text-transform: none;
   height: 100%;
   border-radius: 0;
@@ -86,36 +86,36 @@ prm-topbar .md-button {
 }
 
 prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
-    color: #053371;
+    color: #043371;
     height: 100%;
 }
 
 /*User Area - Hover - Button  Color - My Library Card*/
 prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]) {
-    color: #053371;
+    color: #043371;
 }
 
 prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {
-      color: #053371;
+      color: #043371;
   }
 
   /*User Area - Hover - Button on Hover Color - My Library Card*/
 prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {
     background-color: #fff;
-    color: #053371;
+    color: #043371;
     box-shadow: none!important;
 }
 
 /*Language Label - On Hover!! */
 prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy:hover {
     color: #fff; /*Language - English- Text Color */
-    background-color: #053371; /*background-color for English Label*/
+    background-color: #043371; /*background-color for English Label*/
     height: 100%;
 }
 
 /* search bar */
 .prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar {
-    background-color: #053371;
+    background-color: #043371;
 }
 
 /* sign in */
@@ -130,11 +130,11 @@ prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:ho
 }
 
 .md-button.button-confirm:hover:not([disabled]) {
-  background: #E87722;
+  background: #CC4E00;
 }
 
 .md-button.button-confirm {
-  color: #E87722;
+  color: #CC4E00;
 }
 
 .weak-text div[translate="Holdings:"], .summary-brief  {
@@ -186,4 +186,192 @@ span.best-location-library-code.locations-link {
 
 @media (max-width: 700px) {
     .lcs_slide_out { display: none; }
+}
+
+/* Adjustments to Advanced Search */
+
+button.switch-to-simple {
+	color: #fff !important;
+}
+
+div.advanced-search-backdrop.visible {
+	background-color: #043371 !important;
+}
+
+/* Creates class for screen reader visibility only */
+
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* Fixes to Collections header - removes background, overlays */
+
+prm-explore-main .header .transparent-top-bar:before {
+  background-color: #fff;
+   opacity: 1;
+}
+
+prm-collection-navigation-breadcrumbs a {
+  color: white !important;
+  background-color: #043371 !important;
+}
+
+prm-collection-navigation-breadcrumbs a:hover {
+  text-decoration: underline !important;
+}
+
+prm-collection-gallery-header .collection-header-inner.has-transparent-topbar {
+  background-image: none !important;
+  background-color: #043371 !important;
+}
+
+prm-collection-gallery-header .collection-header-inner.has-backdrop-image:before {
+  background-color: #043371 !important;
+}
+
+/* Fixes to collections boxes - removes icons */
+
+prm-gallery-collection .collection-folder .collection-overlay:before {
+    opacity: 1;
+    }
+
+prm-gallery-collection .collection-folder .item-meta {
+    background-color: white;
+}
+
+span.item-type {
+    display:none;
+}
+
+/* LibChat Floating widget CSS */
+
+button.s-lch-widget-float-btn {
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.9);
+  }
+
+button.s-lch-widget-float-btn:hover {
+    transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Scootch the Browse By nav up a bit so it doesn't overlap with the chat widget */
+
+prm-page-nav-menu #speedDialWidget {
+  bottom: 6em !important;
+}
+
+/* keep the advanced search box open */
+
+#advancedSearchTabs {
+    min-height: 700px;
+    overflow: auto;
+}
+
+@media (min-width: 600px) {
+    #advancedSearchTabs {
+        min-height: 400px;
+    }
+}
+
+.string-block .animate-scale .middle {
+    display: none;
+}
+ 
+.collapsed-area .layout-wrap .layout-align-space-between-center .layout-row {
+    display: none;
+}
+
+/* hide the expand chevron */
+
+prm-advanced-search * > button.collapsed-button * > md-icon {
+    display:  none;
+}
+
+/* Fix May 2022 release weirdness */
+
+prm-search-bar .advanced-search-wrapper md-input-container.bold-text input.ng-hide:not(.ng-hide-animate) {
+  display: block !important;
+}
+
+/* Embiggen the succees bar text for Rapido */
+
+.success-bar {
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+/* Hide Photocopy option on resource sharing form */
+
+md-radio-button[value="PHYSICAL_NON_RETURNABLE"] {
+    display: none;
+}
+
+/* Have Main Menu links display on Services page - Primo August 2018 Release  */
+prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
+
+    display: inline;
+}
+
+md-card-title, md-card-content {
+    background: #ffffff;
+}
+
+md-card-title span.md-headline {
+    font-weight:400;
+}
+
+.chapter-scan-note {
+  margin: 8px 0 4px 0;
+  padding: 8px 12px;
+  background: #eff6ff;            /* soft blue */
+  border-left: 4px solid #2563eb; /* blue stripe */
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Rapido closure alert */
+.rapido-closure-note {
+  margin: 4px 0 16px 0;
+  padding: 12px 18px;
+  background: #fffbeb;            /* pale yellow */
+  border: 2px solid #f59e0b;      /* amber border */
+  border-left-width: 8px;         /* strong left stripe */
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+.rapido-closure-note .rapido-icon {
+  font-size: 1.4rem;
+}
+
+.rapido-closure-note .rapido-text {
+  white-space: normal;
+}
+
+/* Backup: suppress alerts in the "Find this in the library" block */
+#getit_link_1_0 .chapter-scan-note,
+#getit_link_1_0 .rapido-closure-note {
+  display: none !important;
 }
